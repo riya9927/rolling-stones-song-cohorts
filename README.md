@@ -1,4 +1,4 @@
-# 🎵 Creating Cohorts of Songs using Clustering (Spotify - Rolling Stones)
+# 🎵 Creating Cohorts of Songs using Clustering 
 
 This project applies **unsupervised machine learning (clustering)** techniques to create **cohorts of songs** based on their audio features from Spotify's API. By identifying patterns in musical attributes like energy, danceability, valence, and more, the project groups songs into meaningful clusters that can be used for recommendation systems.
 
@@ -6,7 +6,15 @@ This project applies **unsupervised machine learning (clustering)** techniques t
 
 ## 📁 Project Structure
 
-📦 spotify-song-clustering/ │ ├── 📊 EDA_and_Clustering.ipynb # Jupyter notebook with complete code and analysis ├── 📁 spotify_data/ # Contains the extracted CSV file from the Rolling Stones dataset ├── 📄 README.md # Project overview and instructions ├── 📄 requirements.txt # Required packages └── 📄 rolling_stones_spotify.csv
+```
+📦 spotify-song-clustering/
+│
+├── 📊 CohortsofSongs.ipynb          # Jupyter notebook with complete code and analysis
+├── 📄 1688641626_data_dictionary.xlsx  # Blueprint for understanding the dataset
+├── 📄 README.md                      # Project overview and instructions
+├── 📄 requirements.txt               # Required packages
+└── 📄 1689942861_rolling_stones_spotify.zip    # Original dataset
+```
 
 ---
 
@@ -55,6 +63,43 @@ Spotify wants to personalize music recommendations using **cohorts of songs**. T
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/spotify-song-clustering.git
+git clone https://github.com/riya9927/rolling-stones-song-cohorts.git
 cd spotify-song-clustering
+```
 
+2. Create a virtual environment and install dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+3. Open the notebook:
+
+```bash
+jupyter notebook EDA_and_Clustering.ipynb
+```
+
+---
+
+## 📷 Visual Insights
+
+- 📈 Correlation Matrix of song attributes  
+- 🎨 PCA 2D visualization of clusters  
+- 🌀 Cluster-wise interpretation of musical traits  
+- 📀 Top Albums by Popular Songs  
+
+---
+
+## 📌 Results
+
+- Songs were grouped into **4 clusters** with distinct acoustic/mood characteristics.
+- Identified albums with **highest popular songs** for recommendation.
+- Provided **cluster-wise interpretation** for better recommendation logic.
+
+---
+
+## ✨ Future Work
+
+- Incorporate user listening data for personalized recommendations
+- Use advanced models like DBSCAN or Gaussian Mixture Models
+- Integrate with a web app for real-time recommendations
